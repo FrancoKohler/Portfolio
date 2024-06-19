@@ -86,9 +86,11 @@ function SendMail() {
       Swal.fire({
         icon: "success",
         title: "Your Email was send succesfully",
+        text: "This product is already in your cart.",
         customClass: {
           popup: "my-popup",
           title: "my-title",
+          text: "my-text",
           confirmButton: "my-confirm-button",
         },
       });
