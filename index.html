@@ -6,8 +6,6 @@
     <title>Franco Köhler</title>
     <!--LINK CSS-->
     <link rel="stylesheet" href="./css/style.css" />
-    <!--LINK SCRIPT-->
-    <script defer src="./app/index.js"></script>
   </head>
   <body>
     <!--------NAV--------->
@@ -201,29 +199,24 @@
                 class="top-input"
                 type="text"
                 id="name"
-                name="name"
-                placeholder="Full Name"
-                required
+                placeholder="Your Name"
               />
               <input
                 class="top-input"
                 type="email"
                 id="email"
-                name="email"
-                placeholder="Your E-mail"
-                required
+                placeholder="Your Email"
               />
 
               <textarea
-                id="message"
-                name="message"
-                rows="4"
-                placeholder="Comment"
-                required
                 class="contact-text"
+                id="message"
+                placeholder="Your Message"
               ></textarea>
 
-              <button class="button-form" type="submit">SEND</button>
+              <button class="button-form" type="button" onclick="SendMail()">
+                SEND
+              </button>
             </div>
           </form>
         </div>
@@ -233,5 +226,13 @@
       <p>Franco Köhler</p>
       <p>Kohler1395@gmail.com</p>
     </footer>
+    <!--LINK SCRIPT-->
+    <script defer src="./app/index.js"></script>
+    <!--SCRIPT EMIAL-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

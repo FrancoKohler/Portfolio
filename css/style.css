@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
   background-color: rgb(15, 15, 15);
 }
@@ -8,8 +12,8 @@ nav {
   align-items: center;
   text-align: center;
   margin: auto;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   justify-content: space-between;
   position: fixed;
   top: 0;
@@ -51,7 +55,7 @@ a {
 li {
   margin: 0.5rem;
   padding-left: 2rem;
-  padding-right: 2rem;
+  padding-right: 6rem;
   display: flex;
   position: relative;
   align-items: center;
@@ -65,7 +69,8 @@ li {
 li:hover::after {
   content: "•";
   position: absolute;
-  left: 50%;
+  justify-content: center;
+  left: 33.33%;
   transform: translateX(-50%);
   bottom: -2rem;
   font-size: 1.5rem;
@@ -75,6 +80,7 @@ li:hover::after {
 
 /*----------------------DROPDWON LANGUAGE-----------------*/
 .showicon {
+  display: none;
   margin-right: 15px;
   padding: 16px;
   font-size: 16px;
@@ -132,13 +138,14 @@ li:hover::after {
 .main-div {
   display: flex;
   margin-top: 8rem;
-  padding-bottom: 8rem;
+  padding-bottom: 6rem;
   justify-content: center;
   border-bottom: #52d1dc 2px solid;
 }
 h1 {
   margin-top: 8rem;
   margin-bottom: 0px;
+  padding-bottom: 2rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
@@ -171,6 +178,7 @@ h1 {
   width: 70%;
 }
 h2 {
+  padding-bottom: 2rem;
   justify-content: start;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -193,6 +201,7 @@ h2 {
   color: white;
 }
 h3 {
+  padding-bottom: 2rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
@@ -241,6 +250,7 @@ h3 {
   width: 70%;
 }
 .section-projects h4 {
+  padding-top: 2rem;
   justify-content: start;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -268,7 +278,8 @@ h3 {
   cursor: pointer;
 }
 .div-project {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
 }
 /*---------------LG LOGOS--------*/
 .lg-logos {
@@ -297,6 +308,7 @@ h5 {
   font-weight: 500;
   font-size: 2rem;
   color: white;
+  padding-top: 2rem;
 }
 .contact-form {
   display: flex;
@@ -367,9 +379,24 @@ footer {
   width: 100%;
 }
 footer p {
+  padding-top: 1rem;
   padding-left: 10px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 200;
   color: #fff;
+}
+
+/*-----------ALERT----------*/
+.my-title {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  color: #fff;
+}
+.my-popup {
+  background-color: #000000;
+  -webkit-box-shadow: 2px 4px 0px 2px #52d1dc;
+  -moz-box-shadow: 2px 4px 0px 2px #52d1dc;
+  box-shadow: 2px 4px 0px 2px #52d1dc;
 }

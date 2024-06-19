@@ -65,3 +65,39 @@ let languageButton = document.getElementById("languageButton");
 languageButton.addEventListener("click", () => {
   changeLanguage(onloadLanguage === "ES" ? "EN" : "ES");
 });
+
+// index.js
+
+function SendMail() {
+  var params = {
+    from_name: document.getElementById("name").value,
+    email_id: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  const serviceID = "service_o3m25w6";
+  const templateID = "template_r6xmg3i";
+  const userID = "9oxu1_QcLVNCGitKQ";
+
+  emailjs
+    .send(serviceID, templateID, params, userID)
+    .then((res) => {
+      console.log("Email sent successfully!", res);
+      Swal.fire({
+        icon: "success",
+        title: "Your Email was send succesfully",
+        customClass: {
+          popup: "my-popup",
+          title: "my-title",
+          confirmButton: "my-confirm-button",
+        },
+      });
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+    })
+    .catch((err) => {
+      console.error("Error sending email:", err);
+      alert("There was an error sending your message. Please try again later.");
+    });
+}
