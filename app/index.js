@@ -70,8 +70,8 @@ languageButton.addEventListener("click", () => {
 
 function SendMail() {
   var params = {
-    from_name: document.getElementById("name").value,
-    email_id: document.getElementById("email").value,
+    name: document.getElementById("fullname").value,
+    email_id: document.getElementById("email_id").value,
     message: document.getElementById("message").value,
   };
 
@@ -85,8 +85,8 @@ function SendMail() {
       console.log("Email sent successfully!", res);
       Swal.fire({
         icon: "success",
-        title: "Your Email was send succesfully",
-        text: "This product is already in your cart.",
+        title: "Your Email was sent successfully",
+        text: "Will be in touch",
         customClass: {
           popup: "my-popup",
           title: "my-title",
@@ -94,12 +94,22 @@ function SendMail() {
           confirmButton: "my-confirm-button",
         },
       });
-      document.getElementById("name").value = "";
-      document.getElementById("email").value = "";
+      document.getElementById("fullname").value = "";
+      document.getElementById("email_id").value = "";
       document.getElementById("message").value = "";
     })
     .catch((err) => {
       console.error("Error sending email:", err);
-      alert("There was an error sending your message. Please try again later.");
+      Swal.fire({
+        icon: "error",
+        title: "Oops",
+        text: "There was a problem sending your email",
+        customClass: {
+          popup: "my-popup",
+          title: "my-title",
+          text: "my-text",
+          confirmButton: "my-confirm-button",
+        },
+      });
     });
 }
