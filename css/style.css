@@ -234,11 +234,54 @@ h3 {
   padding: 1rem;
   transition: 1s;
 }
-.skills-list:hover {
+.html-skill:hover {
+  transition: 1s;
+  -webkit-box-shadow: 2px 4px 0px 2px #e5532d;
+  -moz-box-shadow: 2px 4px 0px 2px #e5532d;
+  box-shadow: 2px 4px 0px 2px #e5532d;
+}
+.css-skill:hover,
+.rp-skill:hover {
   transition: 1s;
   -webkit-box-shadow: 2px 4px 0px 2px #52d1dc;
   -moz-box-shadow: 2px 4px 0px 2px #52d1dc;
   box-shadow: 2px 4px 0px 2px #52d1dc;
+}
+.sass-skill:hover {
+  transition: 1s;
+  -webkit-box-shadow: 2px 4px 0px 2px #ce6b9c;
+  -moz-box-shadow: 2px 4px 0px 2px #ce6b9c;
+  box-shadow: 2px 4px 0px 2px #ce6b9c;
+}
+.js-skill:hover {
+  transition: 1s;
+  -webkit-box-shadow: 2px 4px 0px 2px #f7e025;
+  -moz-box-shadow: 2px 4px 0px 2px #f7e025;
+  box-shadow: 2px 4px 0px 2px #f7e025;
+}
+.git-skill:hover {
+  transition: 1s;
+  -webkit-box-shadow: 2px 4px 0px 2px #ffffff;
+  -moz-box-shadow: 2px 4px 0px 2px #ffffff;
+  box-shadow: 2px 4px 0px 2px #ffffff;
+}
+.figma-skill:hover {
+  transition: 1s;
+  -webkit-box-shadow: 2px 4px 0px 2px #a465fa;
+  -moz-box-shadow: 2px 4px 0px 2px #a465fa;
+  box-shadow: 2px 4px 0px 2px #a465fa;
+}
+.ph-skill:hover {
+  transition: 1s;
+  -webkit-box-shadow: 2px 4px 0px 2px #37abff;
+  -moz-box-shadow: 2px 4px 0px 2px #37abff;
+  box-shadow: 2px 4px 0px 2px #37abff;
+}
+.wp-skill:hover {
+  transition: 1s;
+  -webkit-box-shadow: 2px 4px 0px 2px #28799e;
+  -moz-box-shadow: 2px 4px 0px 2px #28799e;
+  box-shadow: 2px 4px 0px 2px #28799e;
 }
 /*-----------------PROJECTS---------*/
 .section-projects {
