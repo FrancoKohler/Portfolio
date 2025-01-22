@@ -5,7 +5,9 @@
 body {
   background-color: rgb(15, 15, 15);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 nav {
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
