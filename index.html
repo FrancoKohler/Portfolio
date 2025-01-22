@@ -34,8 +34,8 @@
         </a>
       </div>
       <ul class="list" id="list">
-        <li id="home"><a href="#homeSect">Home</a></li>
-        <li id="about"><a href="#aboutSect">About</a></li>
+        <li><a id="home" href="#homeSect">Home</a></li>
+        <li><a id="about" href="#aboutSect">About</a></li>
         <li id="projects">
           <a href="#projectsSect">Projects</a>
         </li>
@@ -47,25 +47,24 @@
             class="lenguage"
             src="./assets/ENG FRAME.png"
             alt="english flag"
+            id="imgIdioma"
           />
         </button>
         <div class="dropdown-content">
-          <a href="#">
+          <button id="languageButtonENG" class="btn-idioma">
             <img
               class="lenguage"
               src="./assets/ENG FRAME.png"
               alt="english flag"
-              id="languageButton"
             />
-          </a>
-          <a href="#">
+          </button>
+          <button id="languageButtonESP" class="btn-idioma">
             <img
               class="lenguage"
               src="./assets/ESP FRAME.png"
               alt="spanish flag"
-              id="languageButton"
             />
-          </a>
+          </button>
         </div>
       </div>
     </nav>
@@ -85,11 +84,10 @@
         <div class="div-about">
           <h2 id="about">About</h2>
           <p id="aboutMe" class="p-about">
-            I'm a frontend-focused web developer who builds and manages the
-            front-end of websites. Here you can see some of my work in the
-            Projects section. I am open to job opportunities that fit my skills,
-            if you have a proposal that fits my skills and experience, do not
-            hesitate to contact me
+            I'm a frontend-focused web developer. Here you can see some of my
+            work in the Projects section. I am open to job opportunities that
+            fit my skills, if you have a proposal that fits my skills and
+            experience, do not hesitate to contact me.
           </p>
         </div>
         <div class="div-skills">
@@ -99,6 +97,7 @@
             <p class="skills-list css-skill">CSS</p>
             <p class="skills-list sass-skill">SASS</p>
             <p class="skills-list js-skill">JavaScript</p>
+            <p class="skills-list react-skill">React.Js</p>
             <p class="skills-list git-skill">Github</p>
             <p class="skills-list figma-skill">Figma</p>
             <p class="skills-list rp-skill">Responsive Design</p>
@@ -107,9 +106,49 @@
           </div>
         </div>
       </section>
+      <!-----PROYECTOS----->
       <section class="section-projects" id="projectsSect">
         <div>
           <h4 id="projects">Projects</h4>
+          <!--------TEMASDOS WEB------->
+          <div class="div-project">
+            <p>TemasDos Website</p>
+            <a href="https://francokohler.github.io/TemasdosWeb/">
+              <img
+                class="img-portfolio"
+                src="./assets/PORTADA.png"
+                alt="Temasdos Web"
+              />
+            </a>
+            <div class="lg-logos">
+              <img src="./assets/css3-plain.png" alt="css logo" />
+              <img src="./assets/html5-plain.png" alt="Html logo" />
+              <img src="./assets/javascript-original.png" alt="JS logo" />
+              <img src="./assets/sass.png" alt="sass logo" />
+              <img src="./assets/vscode-original.png" alt="VSC logo" />
+              <img src="./assets/figma-original.png" alt="Figma logo" />
+              <img src="./assets/git-plain.png" alt="Git logo" />
+            </div>
+          </div>
+          <!--------TEMASDOS------->
+          <div class="div-project">
+            <p class="propject-p">Temasdos</p>
+            <a href="https://francokohler.github.io/Presupuestadora/">
+              <img
+                class="img-portfolio"
+                src="./assets/Temasdos.png"
+                alt="TemasDos"
+              />
+            </a>
+            <div class="lg-logos">
+              <img src="./assets/css3-plain.png" alt="css logo" />
+              <img src="./assets/html5-plain.png" alt="Html logo" />
+              <img src="./assets/node-js.png" alt="Node-Js logo" />
+              <img src="./assets/javascript-original.png" alt="JS logo" />
+              <img src="./assets/vscode-original.png" alt="VSC logo" />
+              <img src="./assets/git-plain.png" alt="Git logo" />
+            </div>
+          </div>
           <!--------EVENTIFY------->
           <div class="div-project">
             <p>Eventify</p>
@@ -175,24 +214,6 @@
               <img src="./assets/sass.png" alt="Sass" />
               <img src="./assets/vscode-original.png" alt="VSC logo" />
               <img src="./assets/figma-original.png" alt="Figma logo" />
-              <img src="./assets/git-plain.png" alt="Git logo" />
-            </div>
-          </div>
-          <!--------TEMASDOS------->
-          <div class="div-project">
-            <p>Temasdos</p>
-            <a href="https://francokohler.github.io/Presupuestadora/">
-              <img
-                class="img-portfolio"
-                src="./assets/Temasdos.png"
-                alt="TemasDos"
-              />
-            </a>
-            <div class="lg-logos">
-              <img src="./assets/css3-plain.png" alt="css logo" />
-              <img src="./assets/html5-plain.png" alt="Html logo" />
-              <img src="./assets/javascript-original.png" alt="JS logo" />
-              <img src="./assets/vscode-original.png" alt="VSC logo" />
               <img src="./assets/git-plain.png" alt="Git logo" />
             </div>
           </div>
