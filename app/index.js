@@ -138,3 +138,40 @@ function SendMail() {
       });
     });
 }
+
+/*--------SCROLL ANIMATION--------*/ function isElementInViewport(el) {
+  if (!el) return false;
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top < (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.bottom > 0
+  );
+}
+
+function handleScrollGeneric(selector) {
+  const elements = document.querySelectorAll(selector);
+  elements.forEach((element) => {
+    if (isElementInViewport(element)) {
+      element.classList.add("visible");
+    }
+  });
+}
+
+// Throttle function for scroll event
+function throttle(func, delay) {
+  let lastCall = 0;
+  return function (...args) {
+    const now = new Date().getTime();
+    if (now - lastCall >= delay) {
+      lastCall = now;
+      func(...args);
+    }
+  };
+}
+
+window.addEventListener(
+  "scroll",
+  throttle(() => {
+    handleScrollGeneric(".div-project");
+  }, 100)
+);
