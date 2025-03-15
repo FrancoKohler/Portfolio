@@ -33,7 +33,7 @@ nav {
 a {
   text-decoration: none;
   color: var(--color-txt);
-  font-family: var(----font-family);
+  font-family: var(--font-family);
 }
 .logo-github,
 .logo-behance,
@@ -44,16 +44,11 @@ a {
   cursor: pointer;
   transition: 0.5s;
 }
-.logo-github:hover {
-  height: 45px;
-  width: 45px;
-  transition: 0.5s;
-}
+.logo-github:hover,
 .logo-behance:hover,
 .logo-linkedin:hover {
-  height: 45px;
-  width: 45px;
-  transition: 0.5s;
+  transform: scale(1.2);
+  transition: transform 0.5s;
 }
 
 .list {
@@ -71,7 +66,7 @@ li {
   position: relative;
   align-items: center;
   color: var(--color-txt);
-  font-family: var(----font-family);
+  font-family: var(--font-family);
   font-weight: 600;
   cursor: pointer;
   transition: 1s;
@@ -160,13 +155,13 @@ h1 {
   margin-bottom: 0px;
   padding-bottom: 2rem;
   color: var(--color-txt);
-  font-family: var(----font-family);
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: 4rem;
 }
 .p-web {
   color: var(--color-txt);
-  font-family: var(----font-family);
+  font-family: var(--font-family);
   font-weight: 400;
   font-size: 2rem;
 }
@@ -192,7 +187,7 @@ h2 {
   padding-bottom: 2rem;
   justify-content: start;
   color: var(--color-txt);
-  font-family: var(----font-family);
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: 2rem;
 }
@@ -205,14 +200,14 @@ h2 {
 .p-about {
   width: 70%;
   color: rgb(214, 214, 214);
-  font-family: var(----font-family);
+  font-family: var(--font-family);
   font-weight: 100;
   font-size: 1.5rem;
 }
 h3 {
   padding-bottom: 2rem;
   color: var(--color-txt);
-  font-family: var(----font-family);
+  font-family: var(--font-family);
   font-weight: 400;
   font-size: 2rem;
 }
@@ -231,7 +226,7 @@ h3 {
 .skills-list {
   cursor: pointer;
   color: var(--color-txt);
-  font-family: var(----font-family);
+  font-family: var(--font-family);
   font-weight: 400;
   font-size: 1rem;
   background-color: rgb(10, 10, 10);
@@ -316,7 +311,7 @@ h3 {
   padding-top: 2rem;
   justify-content: start;
   color: var(--color-txt);
-  font-family: var(----font-family);
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: 2rem;
 }
@@ -327,7 +322,7 @@ h3 {
 .section-projects p {
   justify-content: start;
   color: var(--color-txt);
-  font-family: var(----font-family);
+  font-family: var(--font-family);
   font-weight: 400;
   font-size: 1.5rem;
   padding-bottom: 2rem;
@@ -350,7 +345,7 @@ h3 {
 .div-project p {
   font-weight: 400;
   color: var(--color-txt);
-  font-family: var(----font-family);
+  font-family: var(--font-family);
 }
 /*---------------LG LOGOS--------*/
 .lg-logos {
@@ -377,7 +372,7 @@ h5 {
   font-weight: 500;
   font-size: 2rem;
   color: var(--color-txt);
-  font-family: var(----font-family);
+  font-family: var(--font-family);
   padding-top: 2rem;
 }
 .contact-form {
@@ -415,7 +410,7 @@ h5 {
 .top-input::placeholder,
 .contact-text::placeholder {
   color: #8e8e8e;
-  font-family: var(----font-family);
+  font-family: var(--font-family);
   font-weight: 500;
 }
 .button-form {
@@ -426,7 +421,7 @@ h5 {
   border: 1px solid #e0e0e0;
   border-radius: 0.5rem;
   color: var(--color-txt);
-  font-family: var(----font-family);
+  font-family: var(--font-family);
   font-weight: 500;
   cursor: pointer;
   margin-bottom: 4rem;
@@ -450,14 +445,14 @@ footer p {
   padding-top: 1rem;
   padding-left: 10px;
   color: var(--color-txt);
-  font-family: var(----font-family);
+  font-family: var(--font-family);
   font-weight: 200;
 }
 
 /*-----------ALERT----------*/
 .my-title {
   color: var(--color-txt);
-  font-family: var(----font-family);
+  font-family: var(--font-family);
   font-weight: 200;
 }
 .my-popup {
@@ -468,6 +463,6 @@ footer p {
 }
 .my-text {
   color: var(--color-txt);
-  font-family: var(----font-family);
+  font-family: var(--font-family);
   font-weight: 300;
 }
