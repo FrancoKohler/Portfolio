@@ -59,6 +59,13 @@ const translations = {
     hireMe: "Hire Me",
     bntAbout: "About",
     bntProjects: "Projects ",
+    contactMe: "Contact Me",
+    contactp:
+      "Ideas, feedback, or just a friendly hello — your message is always welcome.",
+    contactNamePlaceholder: "Your Name",
+    contactEmailPlaceholder: "Your Email",
+    contactMessagePlaceholder: "Your Message",
+    btnSend: "SEND",
   },
   es: {
     title: "Franco Köhler || Portfolio",
@@ -71,6 +78,13 @@ const translations = {
     hireMe: "Contrátame",
     bntAbout: "Sobre mí",
     bntProjects: "Proyectos",
+    contactMe: "Contactame",
+    contactp:
+      "Ideas, comentarios o simplemente un saludo amistoso: tu mensaje siempre es bienvenido.",
+    contactNamePlaceholder: "Tu Nombre",
+    contactEmailPlaceholder: "Tu Correo",
+    contactMessagePlaceholder: "Tu Mensaje",
+    btnSend: "ENVIAR",
   },
 };
 
@@ -85,14 +99,22 @@ function changeLanguage(lang) {
 
   if (!content) return;
 
+  // Actualizamos el contenido del texto principal
   Object.keys(content).forEach((key) => {
     if (Array.isArray(content[key])) return;
     const el = document.getElementById(key);
-    if (el) el.textContent = content[key];
+    if (el) {
+      // Si el elemento es un input o textarea, actualizamos el placeholder
+      if (el.hasAttribute("placeholder")) {
+        el.setAttribute("placeholder", content[key]);
+      } else {
+        el.textContent = content[key];
+      }
+    }
   });
 
   const navItems = document.querySelectorAll(".nav-item");
-  content.nav.forEach((text, i) => {
+  content.nav?.forEach((text, i) => {
     if (navItems[i]) {
       navItems[i].textContent = text;
     }
@@ -102,6 +124,7 @@ function changeLanguage(lang) {
 
   setActiveLanguageButton(langKey);
 }
+
 document
   .getElementById("contact-form")
   .addEventListener("submit", function (event) {
