@@ -1,0 +1,55 @@
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url(../fonts/SpaceMono-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url(../fonts/SpaceMono-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/Unbounded-VariableFont_wght.ttf") format("truetype");
+  font-weight: 200 900;
+  font-style: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.unbounded {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 300;
+}
+
+.unbounded-light {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 200;
+}
