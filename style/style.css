@@ -484,6 +484,12 @@ h6 {
   header h1 {
     font-size: 1.2rem;
   }
+  main{
+    margin: 0.5rem !important;
+  }
+  .projects{
+    width: 100% !important;
+  }
   .contact {
     width: 80%;
   }

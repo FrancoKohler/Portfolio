@@ -66,6 +66,7 @@ const translations = {
     contactEmailPlaceholder: "Your Email",
     contactMessagePlaceholder: "Your Message",
     btnSend: "SEND",
+    span: "Work in Progress.."
   },
   es: {
     title: "Franco Köhler || Portfolio",
@@ -85,6 +86,7 @@ const translations = {
     contactEmailPlaceholder: "Tu Correo",
     contactMessagePlaceholder: "Tu Mensaje",
     btnSend: "ENVIAR",
+    span: "En Desarrollo.."
   },
 };
 
